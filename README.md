@@ -1,2 +1,3 @@
-# Assignment Tracker
-This program's purpose is to serve as tracker for a student's homework so that they will be less likely to forget and do it on time.
+# Game
+This program's purpose is to serve as learning experience for myself and others who view it.
+This was coded in c++ with not external libraries, only c++ standard libaries.
