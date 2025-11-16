@@ -350,9 +350,9 @@ int main(){
 
     std::string type = generateClass();
 
-    // int arr[10] = {1,2,3,4,5,6,7,8,9,10} this is basically how the map looks like.
+    // int arr[10] = {1,2,3,4,5,6,7,8,9} this is basically how the map looks like.
 
-    int playerPosition = 7;
+    int playerPosition = 1;
     int playerhealth = 20;
     bool GameOver = false;
     bool battleMode = false;
