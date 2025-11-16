@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -30,6 +31,66 @@ std::string flip(){
     else{
         return "You flip the coin and nothing happened, but maybe it could have been different.";
     }
+}
+void quiz(std::string type){
+
+    int randomPhrase;
+    std::string answer;
+
+    std::cout << "What is your class that you started with?(They were Mage, Warrior,Rogue, and Bear)" << std::endl;
+    getline(std::cin,answer);
+
+    while(answer != type){
+        randomPhrase = rand() % 3 + 1;
+        
+
+        if(randomPhrase == 1){
+            std::cout << " Seems like you remembered it wrong time again" << std::endl;
+        }
+        else if(randomPhrase == 2){
+            std::cout << "Disappointing, again." << std::endl;
+        }
+        else{
+            std::cout << " You're making me cry. Again." << std::endl;
+        }
+        std::cin >> answer;
+    }
+    std::cout << "Correct" << std::endl;
+    std::cout << "What is the current year?" << std::endl;
+    std::cin >> answer;
+    while(answer != "2025"){
+        randomPhrase = rand() % 3 + 1;
+        
+        if(randomPhrase == 1){
+            std::cout << " Seems like you remembered it wrong time again" << std::endl;
+        }
+        else if(randomPhrase == 2){
+            std::cout << "Disappointing, again." << std::endl;
+        }
+        else{
+            std::cout << " You're making me cry. Again." << std::endl;
+        }
+        std::cin >> answer;
+    }
+    std::cout << "Correct" << std::endl;
+    std::cout << "What is this event called?" << std::endl;
+    std::cin >> answer;
+    while(answer != "Cutiehack" && answer != "cutiehack"){
+        randomPhrase = rand() % 3 + 1;
+        
+        if(randomPhrase == 1){
+            std::cout << "Seems like you remembered it wrong time again" << std::endl;
+        }
+        else if(randomPhrase == 2){
+            std::cout << "Disappointing, again." << std::endl;
+        }
+        else{
+            std::cout << " You're making me cry. Again." << std::endl;
+        }
+        std::cin >> answer;
+    }
+    std::cout << "Correct" << std::endl;
+    std::cout << "You may pass" << std::endl;
 }
 std::string generateClass(){
     std::string output;
@@ -121,7 +182,7 @@ void printScreen(int location, std::string type,int health, int enemyhealth, std
         std::cout <<"| __/ _/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
         std::cout <<"|                               You defeat the slime and move forward                          |" << std::endl;
-        std::cout <<"|                                  You have " << health << " health                                     |" << std::endl;
+        std::cout <<"|                                  You have " << health << " health                                        |" << std::endl;
         std::cout <<"|                                     You find a coin.                                         |" << std::endl;
         std::cout <<"|                                      Flip the coin?                                          |" << std::endl;
         std::cout<< " _______________________________________________________________________________________________ " << std::endl;
@@ -136,22 +197,67 @@ void printScreen(int location, std::string type,int health, int enemyhealth, std
         std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|"<< std::endl;
+        std::cout <<"| __/|_/|-/|                           _    _                                   |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                          |\\  |_|                                    |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                            \\ |                                    |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                              |                                    |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                             /\\                                     |\\-|\\_|\\__|"<< std::endl;
         std::cout <<"| __/|_/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"| __/ _/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
         std::cout <<"|"<< flip << "                                                                                " << std::endl;
-        std::cout <<"|                               You have " << health << " health                                     |" << std::endl;
-        std::cout <<"|                         You notice                                                                |" << std::endl;
-        std::cout <<"|                                                                                               |" << std::endl;
+        std::cout <<"|                               You have " << health << " health                                             |" << std::endl;
+        std::cout <<"|                             You notice someone waving at you                                  |" << std::endl;
+        std::cout <<"|                                  You feel compelled no?                                       |" << std::endl;
         std::cout<< " _______________________________________________________________________________________________ " << std::endl;
         break;
     case 5:
-        
+        std::cout <<"____________________________________________________________________________________________" << std::endl;
+        std::cout <<"| __/|_/|-/|         ____________________________________________             |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|        /                                              \\          |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|       /                                                 \\        |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|      /      _______                       _______         \\      |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|     /      |       |                     |       |         \\     |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |       |  0    |                     |   0   |            |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |       |_______|                     |_______|            |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |                                                          |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |                                                          |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |                                                          |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |                                                          |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    |            \\                            /               |  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|     \\            \\ ________________________/               /    |\\-|\\_|\\__|"<< std::endl;
+        std::cout <<"| __/|_/|-/|      \\                                                     /     |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/ _/|-/|        \\ _________________________________________________/      |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
+        std::cout <<"|                                This is Jerry, the skeleton.                                   |" << std::endl;
+        std::cout <<"|                        Jerry would give you a treat but it isnt Halloween                     |" << std::endl;
+        std::cout <<"|                            Jerry does not even know when Halloween is                         |" << std::endl;
+        std::cout <<"|                                         Proceed.                                              |" << std::endl;
+        std::cout<< " _______________________________________________________________________________________________ " << std::endl;
+        break;
+    case 6:
+        std::cout <<"____________________________________________________________________________________________" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                      |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                             |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                    |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                               |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                         |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                              |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                           |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                      |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                                   |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                        |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                                         |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                                |\\-|\\_|\\__|"<< std::endl;
+        std::cout <<"| __/|_/|-/|                                                                          |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/ _/|-/|                                                                                   |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
+        std::cout <<"|                                    A gatekeepers blocks the way                               |" << std::endl;
+        std::cout <<"|                              Answer his questions and he will let you pass                    |" << std::endl;
+        std::cout <<"|                                   He is much stronger than you                                 |" << std::endl;
+        std::cout <<"|                                       But he is a pacifist                                       |" << std::endl;
+        std::cout<< " _______________________________________________________________________________________________ " << std::endl;
         break;
     case 10:
         std::cout <<"____________________________________________________________________________________________" << std::endl;
@@ -188,7 +294,7 @@ int main(){
 
     enemy slime;
     slime.hp = 20;
-    slime.dmg = 20;
+    slime.dmg = 2;
 // what could be
     enemy boss;
     boss.hp = 40;
@@ -206,7 +312,7 @@ int main(){
     std::string flipOutcome = "You did not flip the coin";
     
 
-    
+    printScreen(playerPosition,type,playerhealth,enemyhealth,flipOutcome);
     while(!GameOver && playerPosition <= 10){
         
         battleMode = eventCheck(playerPosition);
@@ -248,9 +354,14 @@ int main(){
                     playerPosition++;
                 }
             }
-            else if(move = 1){
+            else if(playerPosition == 6){
+            quiz(type);
+            playerPosition++;
+            }
+            else if(move == 1){
                playerPosition++; 
             }
+            
             
         }
     }
