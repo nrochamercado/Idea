@@ -352,7 +352,7 @@ int main(){
 
     // int arr[10] = {1,2,3,4,5,6,7,8,9} this is basically how the map looks like.
 
-    int playerPosition = 1;
+    int playerPosition = 5;
     int playerhealth = 20;
     bool GameOver = false;
     bool battleMode = false;
@@ -367,7 +367,9 @@ int main(){
         battleMode = eventCheck(playerPosition);
         std::this_thread::sleep_for(std::chrono::seconds(1));
         printScreen(playerPosition,type,playerhealth,enemyhealth,flipOutcome);
-        std::cout << std::endl << std::endl << "Choose 1 for Yes or 0 for No, else \"attack\" and \"defend\"." << std::endl;
+        if(playerPosition != 6){
+            std::cout << std::endl << std::endl << "Choose 1 for Yes or 0 for No, else \"attack\" and \"defend\"." << std::endl;
+        }
         if(battleMode){
            std::string action;
            std::cin >> action;
@@ -404,6 +406,10 @@ int main(){
              std::this_thread::sleep_for(std::chrono::seconds(9000000));
              playerPosition++;
         }
+        else if(playerPosition == 6){
+            quiz(type);
+            playerPosition++;
+        }
         else{
             int move = 0;
             std::cin >> move;
@@ -415,10 +421,6 @@ int main(){
                 else{
                     playerPosition++;
                 }
-            }
-            else if(playerPosition == 6){
-            quiz(type);
-            playerPosition++;
             }
             else if(move == 1){
                playerPosition++; 
@@ -432,3 +434,4 @@ int main(){
     std::cout << "The End" << std::endl;
     return 0;
 }
+
