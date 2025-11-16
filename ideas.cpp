@@ -1,10 +1,10 @@
-
 #include <iostream>
 #include <string>
 #include <ctime>
 #include <cstdlib>
 #include <chrono>
 #include <thread>
+
 // generateClass generates a class for the player out of the 4 roles: Mage, Warrior, Rogue, and Bear.
 // Enemy class helps to create the enemies and assign them hp and their damage
 // eventCheck is used to intialize if an enemy has appeared and if to enter battle
@@ -237,29 +237,77 @@ void printScreen(int location, std::string type,int health, int enemyhealth, std
         break;
     case 6:
         std::cout <<"____________________________________________________________________________________________" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                      |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                             |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                    |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                               |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                         |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                 |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                              |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                           |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                      |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                                   |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                        |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                                         |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/|_/|-/|                                                                                |\\-|\\_|\\__|"<< std::endl;
-        std::cout <<"| __/|_/|-/|                                                                          |\\-|\\_|\\__|" << std::endl;
-        std::cout <<"| __/ _/|-/|                                                                                   |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |          ___                  |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |         |    |                |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |         |____|                |   -_-__-        |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |             \\                |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|   _-_--_       |    /\\ ____/ / \\              |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |   /|_|\\        \\            |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |     V          / \\           |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |               /    \\         |     -_-_-_      |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |                               |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|    _-_-_-      |                               |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |                               |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |                               |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                |                               |   -_--__-       |\\-|\\_|\\__|"<< std::endl;
+        std::cout <<"| __/|_/|-/|                |                               |                 |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/ _/|-/|                                                                  |\\-|\\_|\\__|" << std::endl;
         std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
-        std::cout <<"|                                    A gatekeepers blocks the way                               |" << std::endl;
+        std::cout <<"|                         You are on a bridge and a gatekeeper blocks the way                   |" << std::endl;
         std::cout <<"|                              Answer his questions and he will let you pass                    |" << std::endl;
-        std::cout <<"|                                   He is much stronger than you                                 |" << std::endl;
-        std::cout <<"|                                       But he is a pacifist                                       |" << std::endl;
+        std::cout <<"|                     He is much stronger than you and you forgot your swimming gear            |" << std::endl;
+        std::cout <<"|                                       But he is a pacifist                                    |" << std::endl;
         std::cout<< " _______________________________________________________________________________________________ " << std::endl;
         break;
-    case 10:
+    case 7: 
+        std::cout <<"____________________________________________________________________________________________" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                       |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                       |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                                                                       |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                               ____________________                    |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|                              |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/| _______________________      |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/||                       |     |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/||                       |     |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/||    PLEASE DONT        |     |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/||                       |     |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|________________________      |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|          |                   |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/|_/|-/|          |                   |          |          |                  |\\-|\\_|\\__|"<< std::endl;
+        std::cout <<"| __/|_/|-/|          |                   |          |          |                  |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"| __/ _/|-/|          |                                                            |\\-|\\_|\\__|" << std::endl;
+        std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
+        std::cout <<"|                                       You find an elevator in a cave                         |" << std::endl;
+        std::cout <<"|                                         it has a sign next to it                             |" << std::endl;
+        std::cout <<"|                        (if you enter the elevator you'll be timed out forever)               |" << std::endl;
+        std::cout <<"|                                       Go in?(This is not a joke dont do it)                  |" << std::endl;
+        std::cout<< " _______________________________________________________________________________________________ " << std::endl;
+            break;
+    case 8:
+        std::cout <<"________________________________________________________________________________________________" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |"<< std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|                |                              |                           |                   |" << std::endl;
+        std::cout <<"|_______________________________________________________________________________________________|" << std::endl;
+        std::cout <<"|                                     You went in the elevator                                  |" << std::endl;
+        std::cout <<"|                           You're stuck here for like 900000000000 seconds                     |" << std::endl;
+        std::cout <<"|                                   No music too so this is terrible                            |" << std::endl;
+        std::cout <<"|                            You actually have to wait it out or reset                          |" << std::endl;
+        std::cout<< " _______________________________________________________________________________________________ " << std::endl;
+        break;
+    case 9:
         std::cout <<"____________________________________________________________________________________________" << std::endl;
         std::cout <<"| __/|_/|-/|    |     |          |     |          |     |          |     |     |\\-|\\_|\\__|" << std::endl;
         std::cout <<"| __/|_/|-/|    |     |          |     |    _     |     |          |     |     |\\-|\\_|\\__|" << std::endl;
@@ -304,7 +352,7 @@ int main(){
 
     // int arr[10] = {1,2,3,4,5,6,7,8,9,10} this is basically how the map looks like.
 
-    int playerPosition = 1;
+    int playerPosition = 7;
     int playerhealth = 20;
     bool GameOver = false;
     bool battleMode = false;
@@ -312,7 +360,8 @@ int main(){
     std::string flipOutcome = "You did not flip the coin";
     
 
-    printScreen(playerPosition,type,playerhealth,enemyhealth,flipOutcome);
+    
+    
     while(!GameOver && playerPosition <= 10){
         
         battleMode = eventCheck(playerPosition);
@@ -322,25 +371,38 @@ int main(){
         if(battleMode){
            std::string action;
            std::cin >> action;
-           // action = validateAction()
+        
            if(playerPosition == 2){
-            if(action == "attack"){
-                playerhealth = playerhealth - slime.dmg;
-                slime.hp = slime.hp - 10;
-                enemyhealth = slime.hp;
+                if(action == "attack"){
+                    playerhealth = playerhealth - slime.dmg;
+                    slime.hp = slime.hp - 10;
+                    enemyhealth = slime.hp;
+                }
+                else{
+                    playerhealth = playerhealth - slime.dmg * 0.75;
+                }
+                if(playerhealth <= 0){
+                    GameOver = true;
+                }
+                if(slime.hp <= 0){
+                    battleMode = false;
+                    playerPosition++;
+                }
+            }
+        }
+        else if(playerPosition == 7){
+            int move = 0;
+            std::cin >> move;
+            if(move == 1){
+                playerPosition++;
             }
             else{
-                playerhealth = playerhealth - slime.dmg * 0.75;
-           }
-           if(playerhealth <= 0){
-            GameOver = true;
-           }
-           if(slime.hp <= 0){
-            battleMode = false;
-            playerPosition++;
-           }
+                playerPosition = playerPosition + 2;
+            }
         }
-
+        else if(playerPosition == 8){
+             std::this_thread::sleep_for(std::chrono::seconds(9000000));
+             playerPosition++;
         }
         else{
             int move = 0;
@@ -367,6 +429,6 @@ int main(){
     }
 
     
-    std:: cout << "The End" << std::endl;
+    std::cout << "The End" << std::endl;
     return 0;
 }
