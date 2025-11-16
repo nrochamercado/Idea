@@ -362,7 +362,7 @@ int main(){
 
     
     
-    while(!GameOver && playerPosition <= 10){
+    while(!GameOver && playerPosition <= 9){
         
         battleMode = eventCheck(playerPosition);
         std::this_thread::sleep_for(std::chrono::seconds(1));
